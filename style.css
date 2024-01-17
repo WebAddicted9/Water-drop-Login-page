@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background: #eef0f4; */
+    background:url('https://getwallpapers.com/wallpaper/full/3/1/3/295217.jpg') no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cards .card{
+    position: relative;
+    width: 650px;
+    height: 650px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(233, 249, 255, 0.9),
+    10px 10px 20px rgba(237, 248, 250, 0.9);
+    transition: all 0.5s ease;  
+}
+
+.cards .card:hover{
+    border-radius: 51% 49% 65% 35% / 65% 61% 39% 35% ;
+}
+
+.cards .card::before{
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    left: 25%;
+    box-shadow: rgb(204, 219, 232) 2px 2px 2px 0px inset,
+    rgba(255, 255, 255, 0.5) -2px -2px 3px 1px inset,
+    rgb(204, 219, 232) 2px 2px 2px 0px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.cards .card::after{
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    top: 25%;
+    left: 32%;
+    box-shadow: rgb(204, 219, 232) 2px 2px 2px 0px inset,
+    rgba(255, 255, 255, 0.5) -2px -2px 3px 1px inset,
+    rgb(204, 219, 232) 2px 2px 2px 0px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+
+.card:nth-child(1){
+    border-radius: 53% 47% 37% 63% / 41% 41% 59% 59%  ;
+}
+
+
+.cards .card .card__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+.cards .card-1 .card__content button{
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 1px solid aqua;
+    color: #ffecd1;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+button:hover{
+    scale: 105%;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: inset 20px 20px 20px rgb(167, 243, 255),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(176, 234, 255, 0.9),
+    10px 10px 20px rgba(177, 243, 255, 0.9);
+    transition: all 0.5s ease; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+  h2 {
+    font-size:2.5em;
+    color:#111;
+    text-align:center;
+  }
+  .input-box {
+    position:relative;
+    width:310px;
+    margin:30px 0;
+    border-bottom:1px solid black;
+  }
+  .input-box label {
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%);
+    font-size:1.5em;
+    color:#111;
+    pointer-events:none;
+    transition:.5s;
+  }
+  .input-box input:focus  ~ label,
+  .input-box input:valid  ~ label {
+    top:-5px;
+  }
+  .input-box input {
+    width:100%;
+    height:50px;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size:1.5em;
+    color:#000;
+    padding:0 35px 0 5px;
+  }
+  .input-box .icon {
+    position:absolute;
+    right:8px;
+    top:50%;
+    color: #111;
+    transform: translateY(-50%);
+  }
+  .remember-forgot {
+    margin:-15px 0 15px;
+    font-size:1.2em;
+    color:#111;
+    display:flex;
+    justify-content:space-between;
+  }
+  .remember-forgot label input {
+    margin-right:3px;
+  }
+  .remember-forgot a {
+    color:var(--black-color);
+    text-decoration:none;
+  }
+  .remember-forgot a:hover {
+    text-decoration:underline;
+  }
+  button {
+    width:100%;
+    height:40px;
+    background-color:black;
+    border:1px dashed black;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:1.5em;
+    color:#66fcf1;
+    font-weight:500;
+  }
+  .register-link {
+    font-size:1.2em;
+    color:var(--black-color);
+    text-align:center;
+    margin:25px 0 10px;
+  }
+  .register-link p a {
+    color:var(--black-color);
+    text-decoration:none;
+    font-weight:600;
+  }
+  .register-link p a:hover {
+    text-decoration:underline;
+  }
+  @media (max-width:500px) {
+    .login-box {
+      width:100%;
+      height:100vh;
+      border:none;
+      border-radius:0;
+    }
+    .input-box {
+      width:290px;
+    }
+  }
